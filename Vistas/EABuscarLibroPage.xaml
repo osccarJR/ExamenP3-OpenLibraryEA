@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenLibraryEA.Views.EABuscarLibroPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Ingrese ISBN:" />
+        <Entry Text="{Binding ISBN}" Placeholder="ISBN" />
+        <Button Text="Buscar" Command="{Binding BuscarLibroCommand}" />
+        <Label Text="Título:" />
+        <Label Text="{Binding Titulo}" />
+        <Label Text="Autores:" />
+        <Label Text="{Binding Autores}" />
+        <Button Text="Guardar" Command="{Binding GuardarLibroCommand}" />
+    </StackLayout>
+</ContentPage>
